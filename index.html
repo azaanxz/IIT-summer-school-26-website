@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday! 🎉</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Floating emojis background -->
+  <div class="emoji-field" id="emojiField"></div>
+
+  <!-- Confetti canvas -->
+  <canvas id="confettiCanvas"></canvas>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="glitter-overlay"></div>
+
+    <div class="hero-content">
+      <div class="crown">👑</div>
+      <h1 class="big-title">
+        <span class="letter" style="--i:0">H</span>
+        <span class="letter" style="--i:1">A</span>
+        <span class="letter" style="--i:2">P</span>
+        <span class="letter" style="--i:3">P</span>
+        <span class="letter" style="--i:4">Y</span>
+        <span class="space"> </span>
+        <span class="letter" style="--i:5">B</span>
+        <span class="letter" style="--i:6">I</span>
+        <span class="letter" style="--i:7">R</span>
+        <span class="letter" style="--i:8">T</span>
+        <span class="letter" style="--i:9">H</span>
+        <span class="letter" style="--i:10">D</span>
+        <span class="letter" style="--i:11">A</span>
+        <span class="letter" style="--i:12">Y</span>
+        <span class="letter" style="--i:13">!</span>
+      </h1>
+
+      <div class="friend-name">
+        <span class="name-glow">My Best Friend 🎂</span>
+      </div>
+
+      <p class="subtitle">Today, the universe celebrates <em>you</em>. 🌟</p>
+
+      <button class="party-btn" id="partyBtn" onclick="triggerParty()">
+        <span>🎊 PRESS FOR PARTY 🎊</span>
+      </button>
+    </div>
+
+    <div class="cake-wrapper">
+      <div class="cake" id="cake">
+        <div class="cake-top">
+          <div class="candle"><div class="flame"></div></div>
+          <div class="candle"><div class="flame"></div></div>
+          <div class="candle"><div class="flame"></div></div>
+        </div>
+        <div class="cake-mid"></div>
+        <div class="cake-bot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN SECTION -->
+  <section class="countdown-section" id="countdown">
+    <h2 class="section-title">🎈 Counting Down To The Big Day! 🎈</h2>
+    <div class="countdown-grid" id="countdownGrid">
+      <div class="time-block">
+        <div class="time-num" id="days">03</div>
+        <div class="time-label">DAYS</div>
+      </div>
+      <div class="sep">:</div>
+      <div class="time-block">
+        <div class="time-num" id="hours">00</div>
+        <div class="time-label">HOURS</div>
+      </div>
+      <div class="sep">:</div>
+      <div class="time-block">
+        <div class="time-num" id="minutes">00</div>
+        <div class="time-label">MINUTES</div>
+      </div>
+      <div class="sep">:</div>
+      <div class="time-block">
+        <div class="time-num" id="seconds">00</div>
+        <div class="time-label">SECONDS</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WISHES SECTION -->
+  <section class="wishes-section">
+    <h2 class="section-title rainbow-text">💌 My Wishes For You 💌</h2>
+    <div class="wishes-grid">
+      <div class="wish-card" style="--delay:0s">
+        <div class="wish-icon">🌈</div>
+        <p>May every day bring you the kind of joy that makes your cheeks hurt from smiling!</p>
+      </div>
+      <div class="wish-card" style="--delay:0.15s">
+        <div class="wish-icon">🚀</div>
+        <p>May all your dreams launch into orbit and come back as reality!</p>
+      </div>
+      <div class="wish-card" style="--delay:0.3s">
+        <div class="wish-icon">💪</div>
+        <p>May you be as unstoppable this year as you are awesome every single day!</p>
+      </div>
+      <div class="wish-card" style="--delay:0.45s">
+        <div class="wish-icon">🎁</div>
+        <p>May the universe wrap the most amazing surprises just for you!</p>
+      </div>
+      <div class="wish-card" style="--delay:0.6s">
+        <div class="wish-icon">🍰</div>
+        <p>May your cake be huge, your candles be few, and your day be legendary!</p>
+      </div>
+      <div class="wish-card" style="--delay:0.75s">
+        <div class="wish-icon">❤️</div>
+        <p>May you always know how incredibly loved and valued you truly are!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p class="footer-text">Made with <span class="heart-beat">❤️</span> just for you • Happy Birthday! 🎉</p>
+    <div class="footer-balloons">🎈🎈🎈</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
